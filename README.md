@@ -33,11 +33,11 @@ Alternative installation is possible without local dependencies relying on [Dock
 
 Clone the repository
 
-    git clone git@github.com:gothinkster/laravel-realworld-example-app.git
+    git clone https://github.com/mir-zaki/product.git
 
 Switch to the repo folder
 
-    cd laravel-realworld-example-app
+    cd product
 
 Install all the dependencies using composer
 
@@ -56,6 +56,8 @@ Generate a new JWT authentication secret key
     php artisan jwt:generate
 
 Run the database migrations (**Set the database connection in .env before migrating**)
+username: admin
+password: admin
 
     php artisan migrate
 
@@ -65,14 +67,6 @@ Start the local development server
 
 You can now access the server at http://localhost:8000
 
-**TL;DR command list**
-
-    git clone git@github.com:gothinkster/laravel-realworld-example-app.git
-    cd laravel-realworld-example-app
-    composer install
-    cp .env.example .env
-    php artisan key:generate
-    php artisan jwt:generate 
     
 **Make sure you set the correct database connection information before running the migrations** [Environment variables](#environment-variables)
 
@@ -85,9 +79,7 @@ You can now access the server at http://localhost:8000
 
 Open the DummyDataSeeder and set the property values as per your requirement
 
-    database/seeds/DummyDataSeeder.php
 
-Run the database seeder and you're done
 
     php artisan db:seed
 
