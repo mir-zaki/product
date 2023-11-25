@@ -56,10 +56,11 @@ Generate a new JWT authentication secret key
     php artisan jwt:generate
 
 Run the database migrations (**Set the database connection in .env before migrating**)
-username: admin
-password: admin
 
-    php artisan migrate
+    php artisan migrate 
+    username: admin 
+    password: admin
+
 
 Start the local development server
 
